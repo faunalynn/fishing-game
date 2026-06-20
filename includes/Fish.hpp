@@ -11,13 +11,16 @@ class Fish
     private:
             unsigned int                _id;
             std::string                 _name;
-            unsigned int                _rarity; //enum
+            Rarity                      _rarity; //enum
             bool                        _found;
-            unsigned int                _location; //enum
+            Location                    _location; //enum
             std::vector<Dialogue>       _lines;
             int                         _linecount;
 
     public:
+            Fish(void);
+            ~Fish(void);
+
 };
 
 #endif

@@ -2,6 +2,7 @@
 #define STRUCTS_HPP
 
 #include <string>
+#include "enum.hpp"
 
 struct Dialogue
 {
