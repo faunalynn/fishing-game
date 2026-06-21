@@ -18,8 +18,20 @@ class Fish
             int                         _linecount;
 
     public:
-            Fish(void);
+            Fish(unsigned int id, std::string name, Rarity rar, Location loc, std::vector<Dialogue> lines);
             ~Fish(void);
+
+            unsigned int getId(void) const;
+            std::string getName(void) const;
+            Rarity getRarity(void) const;
+            bool getFound(void) const;
+            Location getLocation(void) const;
+            std::string getCurrentLine(void) const;
+            int getLinecount(void) const;
+
+            bool unlockNextLine(void); //_linecount++ et renvoi true si ca a reussi
+            bool isFullyUnlocked(void) const; 
+            void markFound(void);
 
 };
 
